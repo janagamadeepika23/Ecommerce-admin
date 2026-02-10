@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      {/* Toast Notifications */}
+     
       <ToastContainer position="top-right" autoClose={3000} />
 
       <Navbar />
