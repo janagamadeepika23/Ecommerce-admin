@@ -1,0 +1,127 @@
+.add {
+  width: 100%;
+  padding: 20px 40px;
+  background: #f6f7fb;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ================= FORM ================= */
+.add form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 850px;
+  margin: auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= IMAGE UPLOAD ================= */
+.add-image-upload {
+  align-items: flex-start;
+}
+
+.add-image-upload p {
+  font-weight: 600;
+  color: #333;
+}
+
+.add-image-upload img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 2px dashed #d0d0d0;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.add-image-upload img:hover {
+  border-color: #ff6a00;
+}
+
+/* ================= INPUTS ================= */
+.add-product-name p,
+.add-product-description p,
+.add-category p,
+.add-price p {
+  font-weight: 600;
+  color: #333;
+}
+
+.add-product-name input,
+.add-price input,
+.add-product-description textarea,
+.add-category select {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.add-product-name input:focus,
+.add-price input:focus,
+.add-product-description textarea:focus,
+.add-category select:focus {
+  border-color: #ff6a00;
+}
+
+/* ================= DESCRIPTION ================= */
+.add-product-description textarea {
+  resize: none;
+}
+
+/* ================= CATEGORY & PRICE ================= */
+.add-category-price {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.add-category,
+.add-price {
+  flex: 1;
+}
+
+/* ================= BUTTON ================= */
+.add-btn {
+  margin-top: 20px;
+  padding: 14px;
+  background: #ff6a00;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background: #e65c00;
+  transform: translateY(-1px);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .add {
+    padding: 15px;
+  }
+
+  .add-category-price {
+    flex-direction: column;
+  }
+
+  .add form {
+    padding: 20px;
+  }
+}
