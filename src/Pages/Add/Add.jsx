@@ -12,7 +12,7 @@ const Add = () => {
   const [data, setData] = useState({
     productName: "",
     company: "",
-    model: "",          // ✅ model
+    model: "",          
     brand: "",
     description: "",
     price: "",
@@ -39,7 +39,7 @@ const Add = () => {
       const formData = new FormData();
       formData.append("productName", data.productName);
       formData.append("company", data.company);
-      formData.append("model", data.model);      // ✅ model
+      formData.append("model", data.model);      
       formData.append("brand", data.brand);
       formData.append("description", data.description);
       formData.append("price", data.price);
